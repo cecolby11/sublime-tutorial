@@ -55,9 +55,12 @@ a:hover{
   padding: 0; /*remove default*/
 }
 .main-content .section {
-  padding: 50px;
-  min-height: 500px;
+  padding: 30px;
+  min-height: 700px;
   margin: 0 auto;
+}
+.main-content .item {
+  width: 75%;
 }
 .section h3 {
   font-size: 40px;
