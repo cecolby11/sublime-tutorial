@@ -85,7 +85,7 @@ a:hover{
 #tools .row {
   margin-top: 20px;
 }
-#tips {
+#cursors {
   background: #000;
   color: #eee;
 }
@@ -94,5 +94,5 @@ a:hover{
   color: #363636;
 }
 #keyboard .table {
-  margin-top: 40px;
+  margin-top: 50px;
 }
