@@ -22,7 +22,7 @@
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#tools">Tools</a></li>
-          <li><a href="#tricks">Tricks</a></li>
+          <li><a href="#keyboard">Keyboard Shortcuts</a></li>
           <li><a href="#tips">Tips</a></li>
         </ul>
       </div>
@@ -67,8 +67,7 @@
               </div>
               <div class="row">
                 <div class="col-md-12"> 
-                  <p>Latest is Sublime Text 3 (in beta). Sublime Text 2 is also fine!</p>
-                  <a target="_blank" href="https://www.sublimetext.com/3">Download Here</a>
+                  <p class="text-center">Latest is Sublime Text 3 (in beta). Sublime Text 2 is also fine! <a target="_blank" href="https://www.sublimetext.com/3">Download Here</a></p>
                 </div>
               </div>
             </div>
@@ -91,6 +90,7 @@
                     <li>Open Sublime Text. Open the console by pressing command + `</li>
                     <li>Go to <a target="_blank" href="https://packagecontrol.io/installation">packagecontrol.io/installation</a></li>
                     <li>Copy the code from the Sublime Text 3 box, and paste it into the console. Hit return to run the code.</li>
+                    <li>Close and reopen Sublime Text Editor.</li>
                   </ol>
                 </div>
               </div>
@@ -105,18 +105,19 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-6">
-                  <p>This Sublime plugin lets developers drop boilerplate code into their programs with certain key combinations; this will cut out a chunk of the monotony from your work.</p>
-                  <p>In the ChiLDlab we can use Emmet to code JsPsych experiments faster!</p>
-                </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
+                  <p class="text-center">Quickly insert boilerplate code with certain key combinations; create JsPsych experiments faster!</p>
+                  <h3>To Install:</h3>
                   <ol>
-                    <li>Close and reopen Sublime Text Editor.</li>
-                    <li>Hit command + shift + p to open the options menu. Then type Package Control Install, and click the Package Control: Install Package option highlighted.</li>
-                    <li>In the Package Control menu, type Emmet. Click on the highlighted option to install the plugin.</li>
-                    <li>Close and reopen Sublime.</li>
-                    <li>To make sure it's installed, hit command + shift + p to open the options menu again.</li>
-                    <li>If you type Emmet and you see a slew of Emmet options, then congrats!
+                    <li><kbd>command + shift + p</kbd> to open the options menu.</li>
+                    <li>Type <kbd>Package Control Install<kbd>, and select <kbd>Package Control: Install Package</kbd></li>
+                    <li>In the Package Control menu, search <kbd>Emmet</kbd>. Click on the highlighted result to install.</li>
+                    <li>Relaunch Sublime.</li>
+                  </ol>
+                  <h3>To Use:</h3>
+                  <ol>
+                    <li><kbd>! + tab</kbd> in a .html file to insert boilerplate html</li>
+                    <li><video src="assets/img/emmet/template.mov" width="300" autoplay="true"></video></li>
                   </ol>
                 </div>
               </div>
@@ -169,11 +170,58 @@
     </div>
     <!-- /.row2 tools -->
 
-    <!-- row3 tricks -->
+    <!-- row3 keyboard -->
     <div class="row">
       <div class="col-md-12">
-        <div id="tricks" class="section">
-          <h3 class="text-center">Tricks</h3>
+        <div id="keyboard" class="section">
+          <h3 class="text-center">Keyboard Shortcuts</h3>
+          <p class="text-center">(1) Download <a href="shortcuts.html" download="shortcuts.html">shortcuts.html</a> (2) Open in sublime (3) Follow the instructions in the comments.</p>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Mac Shortcut</th>
+                <th>Win Shortcut</th>
+                <th>Function</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><kbd>Cmd + shift + d</kbd></td>
+                <td></td>
+                <td>Duplicate line(s)</td>
+              </tr>
+              <tr>
+                <td><kbd>Cmd + [</kbd> or <kbd>Cmd + ]</kbd></td>
+                <td></td>
+                <td>Indent or unindent selection</td>
+              </tr>
+              <tr>
+                <td><kbd>Cmd + ctrl + g</kbd></td>
+                <td></td>
+                <td>Put a cursor at each instance of the selection in the file</td>
+              </tr>
+              <tr>
+                <td><kbd>Cmd + /</kbd></td>
+                <td></td>
+                <td>Comment/uncomment selection</td>
+              </tr>
+              <tr>
+                <td><kbd>Ctrl + shift + k</kbd></td>
+                <td></td>
+                <td>Delete line</td>
+              </tr>
+              <tr>
+                <td><kbd>Cmd + j</kbd></td>
+                <td></td>
+                <td>Join line below to end of current line</td>
+              </tr>
+              <tr>
+                <td><kbd>Cmd + l</kbd></td>
+                <td></td>
+                <td>Select line (and keep going to select subsequent)</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
