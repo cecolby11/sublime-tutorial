@@ -57,7 +57,7 @@ a:hover{
 }
 .main-content .section {
   padding: 30px;
-  min-height: 700px;
+  min-height: 500px;
   margin: 0 auto;
 }
 .main-content .item {
@@ -89,10 +89,14 @@ a:hover{
   background: #000;
   color: #eee;
 }
+#cursors kbd {
+  background: #;
+  color: white;
+}
 #keyboard{ 
   background: #eee;
   color: #363636;
 }
-#keyboard .table {
+.table {
   margin-top: 50px;
 }
