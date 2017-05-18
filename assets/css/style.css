@@ -97,6 +97,9 @@ a:hover{
   background: #eee;
   color: #363636;
 }
+#preferences{
+  background: #fff;
+}
 .table {
   margin-top: 50px;
 }

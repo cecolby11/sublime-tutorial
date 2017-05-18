@@ -286,6 +286,55 @@
     </div>
     <!-- /.row keyboard -->
 
+    <!-- row user pref -->
+    <div class="row">
+      <div class="col-md-12">
+        <div id="preferences" class="section">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="text-center">User Preferences</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <ol>
+                <li>Go to <kbd>Sublime Text > preferences > settings > preferences.sublime-settings -- User</kbd></li><br>
+                <li>Paste/add In: <code>
+                  {
+                    "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+                    "font_size": 19.0,
+                    "hot_exit": false,
+                    "ignored_packages":
+                    [
+                      "Vintage"
+                    ],
+                    "line_padding_bottom": 2,
+                    "remember_open_files": false,
+                    "save_on_focus_lost": true,
+                    "scroll_past_end": true,
+                    "tab_size": 2,
+                    "translate_tabs_to_spaces": true,
+                    "trim_trailing_whitespace_on_save": true,
+                    "word_wrap": true
+                  }
+                </code></li><br>
+                <ul>
+                  <li><code>hot_exit</code>: if <code>
+                  true</code>, sublime will close unsaved windows without prompting (and the default is true! eek!)</li>
+                  <li><code>line_padding_bottom</code>: a little extra spacing below each line (default is 0px)</li>
+                  <li><code>scroll_past_end</code>: if <code>true</code>, sublime leaves empty space between last line and bottom of the file (mac default: false, windows/linux: true)</li>
+                  <li><code>save_on_focus_lost</code>: automatically saves file every time you click out of its window (this is the <strong>best</strong>)</li>
+                  <li><code>word_wrap</code>: if <code>true</code>, sublime disables horizontal scrolling (not disabled by default)</li>
+                </ul><br>
+                <li><p>For more: <a target="_blank" href="http://docs.sublimetext.info/en/latest/reference/settings.html">Sublime settings documentation</a></p></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row user pref -->
+
   </div>
   <!-- /.main content container -->
   
