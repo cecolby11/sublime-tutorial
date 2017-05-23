@@ -20,6 +20,8 @@ h1, h2, h3 {
   background: white;
   color: #666;
   margin-bottom: 0;
+}
+.navbar-hidden {
   visibility: hidden; /*unhide on affix scroll*/
 }
 .affix {
@@ -27,6 +29,8 @@ h1, h2, h3 {
   top:0;
   width: 100%;
   z-index: 9999 !important;
+  animation: affixFadeIn 2s  ease-in;
+  -webkit-animation: affixFadeIn 2s;
 }
 a {
   color: var(--accent2);
@@ -54,28 +58,25 @@ a:hover{
   margin: 0 auto;
   width: 100%;
 }
-.main-content .col-md-12 {
-  padding: 0; /*remove default*/
-}
 .main-content .section {
   padding: 30px;
   min-height: 500px;
   margin: 0 auto;
 }
-.main-content .item {
-  width: 75%;
-}
-.section h3 {
+.section h3,
+.section-small h3 {
   color: var(--accent1);
   font-size: 40px;
   margin-bottom: 30px;
 }
-.section h4 {
+.section h4,
+.section-small h4 {
   font-size: 32px;
   font-weight: 300;
   color: var(--accent1);
 }
-.section h5 {
+.section h5,
+.section-end h5 {
   font-size: 20px;
   font-weight: 300;
   color: var(--accent2);
@@ -83,21 +84,33 @@ a:hover{
 .section .table {
   margin-top: 50px;
 }
+.section-small {
+  height: 200px;
+  text-align: center;
+  padding: 50px;
+}
+.section-small .btn {
+  color: var(--eggshell);
+  background: var(--accent2);
+  border-radius: 0px
+}
 
 /*section-specific*/
-#setup{
+#setup, #package-ctrl{
   background: var(--sublime-grey);
   color: var(--eggshell);
 }
-#setup kbd{
+#setup kbd, 
+#package-ctrl kbd {
   background: var(--eggshell);
   color: var(--sublime-grey);
 }
-#keyboard{ 
+#keyboard, #emmet{ 
   background: var(--eggshell);
   color: #363636;
 }
-#cursors {
+#cursors, 
+#color-highlighter {
   background: #000;
   color: var(--eggshell);
 }
@@ -112,7 +125,19 @@ a:hover{
 #preferences{
   background: #fff;
 }
+#packages hr{
+  border-color: var(--accent2);
+}
 
-#packages .row {
-  margin-top: 20px;
+/*animations*/
+@keyframes affixFadeIn
+{
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+@-webkit-keyframes affixFadeIn 
+{
+from {opacity: 0;}
+to {opacity: 1;}
 }

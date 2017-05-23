@@ -14,7 +14,7 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
   
-  <nav id="main-nav" class="navbar navbar-default" data-spy="affix" data-offset-top="50">
+  <nav id="main-nav" class="navbar navbar-default navbar-hidden" data-spy="affix" data-offset-top="50">
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Sublime Text Tutorial</a>
@@ -26,7 +26,7 @@
           <li><a href="#cursors">Cursors</a></li>
           <li><a href="#preferences">Preferences</a></li>
           <li><a href="#snippets">Snippets</a></li>
-          <li><a href="#packages">Packages</a></li>
+          <li><a href="packages.html">Packages (Part II)</a></li>
         </ul>
       </div>
     </div>
@@ -271,121 +271,16 @@
     </div>
     <!-- /.row snippets -->
 
-    <!-- row packages -->
     <div class="row">
       <div class="col-md-12">
-        <div id="packages" class="section carousel slide" data-ride="carousel">
-          <!-- carousel indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#packages" data-slide-to="0" class="active"></li>
-            <li data-target="#packages" data-slide-to="1" class="active"></li>
-            <li data-target="#packages" data-slide-to="2"></li>
-          </ol>
-          <h3 class="text-center">Packages</h3>
-
-          <!-- carousel inner slides  -->
-          <div class="carousel-inner" role="listbox">
-
-            <!-- slide 1: package control -->
-            <div class="item active container">
-              <div class="row">
-                <div class="col-md-12">
-                   <h4 class="text-center">1. Sublime Package Control</h4>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <p>A Sublime plugin for easily incorporating other packages into Sublime (without web browser)</p> 
-                  <p>Once installed, enter package name into the tool, and Sublime installs it.</p>
-                  <br>
-                  <h3>To Install:</h3>
-                  <ol>
-                    <li>Open Sublime Text. Open the console by pressing command + `</li>
-                    <li>Go to <a target="_blank" href="https://packagecontrol.io/installation">packagecontrol.io/installation</a></li>
-                    <li>Copy the code from the Sublime Text 3 box, and paste it into the console. Hit return to run the code.</li>
-                    <li>Close and reopen Sublime Text Editor.</li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-            <!-- /.slide 1 package control-->
-
-            <!-- slide 2: Emmet -->
-            <div class="item container">
-              <div class="row">
-                <div class="col-md-12">
-                  <h4 class="text-center">2. Emmet!</h4>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <p class="text-center">Quickly insert boilerplate code with certain key combinations; create JsPsych experiments faster!</p>
-                  <h3>To Install:</h3>
-                  <ol>
-                    <li><kbd>command + shift + p</kbd> to open the options menu.</li>
-                    <li>Type <kbd>Package Control Install<kbd>, and select <kbd>Package Control: Install Package</kbd></li>
-                    <li>In the Package Control menu, search <kbd>Emmet</kbd>. Click on the highlighted result to install.</li>
-                    <li>Relaunch Sublime.</li>
-                  </ol>
-                  <h3>To Use:</h3>
-                  <ol>
-                    <li><kbd>! + tab</kbd> in a .html file to insert boilerplate html</li>
-                    <li><video src="assets/img/emmet/template.mov" width="300" autoplay="true"></video></li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-            <!-- /.slide 2 Emmet -->
-
-            <!-- slide 3: Color Highlighter -->
-            <div class="item container">
-              <div class="row">
-                <div class="col-md-12">
-                  <h4 class="text-center">Next Up: Color Highlighter</h4>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <p>This Sublime plugin highlights colors in Sublime Text</p>
-                  <p>In the ChiLDlab we can use Emmet to code JsPsych experiments faster!</p>
-                </div>
-                <div class="col-md-6">
-                  <ol>
-                    <li>Close and reopen Sublime Text Editor.</li>
-                    <li>Hit command + shift + p to open the options menu. Then type Package Control Install, and click the Package Control: Install Package option highlighted.</li>
-                    <li>In the Package Control menu, type Emmet. Click on the highlighted option to install the plugin.</li>
-                    <li>Close and reopen Sublime.</li>
-                    <li>To make sure it's installed, hit command + shift + p to open the options menu again.</li>
-                    <li>If you type Emmet and you see a slew of Emmet options, then congrats!
-                  </ol>
-                </div>
-              </div>
-            </div>
-            <!-- /.slide 3 Color Highlighter -->
-
-          </div>
-          <!-- /. carousel-inner -->
-        
-          <!-- Left and right controls -->
-          <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+        <div class="section-small">
+          <h5>Want to dive deeper? Part II: Sublime Packages <a href="packages.html" class="btn btn-default">Go!</a></h5>
         </div>
-        <!-- /.carousel-->
-
       </div>
-      <!-- /.col -->
     </div>
-    <!-- /.row packages -->
 
   </div>
   <!-- /.main content container -->
   
-
 </body>
 </html>

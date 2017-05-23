@@ -25,28 +25,19 @@ $(document).ready(function() {
       // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-    } // End if
+    }
   });
 
   // ================
   // AFFIX SETUP
   // ================
 
-  $('#main-nav').affix({offset: {top: 400} });
+  $('.nav-hidden').affix({offset: {top: 400} });
 
   $('.down-arrow').on('click', function() {
     $('body').animate({
       scrollTop: $('#tools').offset().top - 170}, 2*1000
     );
-  });
-
-  // ================
-  // CAROUSEL SETUP
-  // ================
-
-  // initialize carousel without scrolling
-  $('.carousel').carousel({
-    interval: false
   });
 
 });
