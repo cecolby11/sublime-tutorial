@@ -1,6 +1,8 @@
 :root{
   --accent1: #E11770;
   --accent2: #25AF88;
+  --sublime-grey: #2A2A2A;
+  --eggshell: #eee;
 }
 body {
   background-image: url('../img/textures/grey.png');
@@ -78,31 +80,39 @@ a:hover{
   font-weight: 300;
   color: var(--accent2);
 }
-#tools {
-  background: #2A2A2A;
-  color: #eee;
+.section .table {
+  margin-top: 50px;
 }
-#tools .row {
-  margin-top: 20px;
+
+/*section-specific*/
+#setup{
+  background: var(--sublime-grey);
+  color: var(--eggshell);
+}
+#setup kbd{
+  background: var(--eggshell);
+  color: var(--sublime-grey);
+}
+#keyboard{ 
+  background: var(--eggshell);
+  color: #363636;
 }
 #cursors {
   background: #000;
-  color: #eee;
+  color: var(--eggshell);
 }
 #cursors kbd {
-  background: #;
-  color: white;
+  background: #363636;
+  color: #fff;
 }
-#keyboard{ 
-  background: #eee;
-  color: #363636;
+#snippets{
+  color: var(--eggshell);
+  background: var(--sublime-grey);
 }
 #preferences{
   background: #fff;
 }
-#snippets{
-  background: #2A2A2A;
-}
-.table {
-  margin-top: 50px;
+
+#packages .row {
+  margin-top: 20px;
 }

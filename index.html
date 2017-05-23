@@ -21,12 +21,12 @@
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#tools">Tools</a></li>
-          <li><a href="#cursors">Cursors</a></li>
+          <li><a href="#setup">Setup</a></li>
           <li><a href="#keyboard">Shortcuts</a></li>
+          <li><a href="#cursors">Cursors</a></li>
           <li><a href="#preferences">Preferences</a></li>
           <li><a href="#snippets">Snippets</a></li>
-          <li><a href="#tips">Tips</a></li>
+          <li><a href="#packages">Packages</a></li>
         </ul>
       </div>
     </div>
@@ -43,41 +43,251 @@
       </div>
     </div>
     <!-- /.row sublime title -->
-    
-    <!-- row tools -->
+
+    <!-- row misc. setup -->
     <div class="row">
       <div class="col-md-12">
-        <div id="tools" class="section carousel slide" data-ride="carousel">
+        <div class="section" id="setup">
+            <div class="row">
+              <div class="col-md-12">
+                 <h3 class="text-center">Setup &amp; Tips</h3>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <h5>Download/Install</h5>
+                <p>Latest is Sublime Text 3 (in beta). <a target="_blank" href="https://www.sublimetext.com/3">Download Here</a></p>
+                <P>Sublime Text 2 is also fine! You may have to tweak some of this tutorial.</p>
+              </div>
+              <div class="col-md-6">
+                <h5>Open an entire directory in sublime, not just files!</h5>
+                <ul>
+                  <li>3 methods:</li>
+                  <ol>
+                    <li>In Sublime: <kbd>File > open > select your directory</kbd></li>
+                    <li>(mac) drag a directory onto the sublime app icon</li>
+                    <li>Set up the 'subl' shortcut in terminal</li>
+                      <ul>
+                        <li>(mac)<code>ln -s "/Applications/Sublime Text 3.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl</code></li>
+                        <li>now you can <code>cd</code>into a directory and enter <code>subl .</code>to open it in sublime</li>
+                      </ul>
+                  </ol>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h5>View windows side-by-side</h5>
+                <ul>
+                  <li>In Sublime: <kbd>View > Layout > Columns: 2</kbd></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row misc setup -->
+
+    <!-- row keyboard -->
+    <div class="row">
+      <div class="col-md-12">
+        <div id="keyboard" class="section">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="text-center">Keyboard Shortcuts</h3>
+              <p class="text-center">(1) Download <a href="shortcuts.html" download="shortcuts.html">shortcuts.html</a> (2) Open in sublime (3) Follow the instructions in the comments.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Mac Shortcut</th>
+                    <th>Win Shortcut</th>
+                    <th>Function</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>Cmd + [</kbd> or <kbd>Cmd + ]</kbd></td>
+                    <td><kbd>Ctrl + [</kbd> or <kbd>Ctrl + ]</kbd></td>
+                    <td>Indent or unindent selection</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>Cmd + /</kbd></td>
+                    <td><kbd>Ctrl + /</kbd></td>
+                    <td>Comment/uncomment selection</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>Ctrl + shift + k</kbd></td>
+                    <td><kbd>Ctrl + shift + k</kbd></td>
+                    <td>Delete line</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>Cmd + shift + d</kbd></td>
+                    <td><kbd>Ctrl + shift + d</kbd></td>
+                    <td>Duplicate line(s)</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>Cmd + l</kbd></td>
+                    <td><kbd>Ctrl + l</kbd></td>
+                    <td>Select line (and keep going to select subsequent)</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>Cmd + j</kbd></td>
+                    <td><kbd>Ctrl + j</kbd></td>
+                    <td>Join line below to end of current line</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>Cmd + ctrl + g</kbd></td>
+                    <td><kbd>Alt + f3</kbd></td>
+                    <td>Put a cursor at each instance of the selection in the file</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>Cmd + d</kbd></td>
+                    <td><kbd>Ctrl + d</kbd></td>
+                    <td>Include the next instance instance of the current selection (and keep going to select subsequent)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row keyboard -->
+
+    <!-- row multiple cursors -->
+    <div class="row">
+      <div class="col-md-12">
+        <div id="cursors" class="section">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="text-center">Multiple Cursors</h3>
+              <p class="text-center">(1) Download <a href="cursors.html" download="cursors.html">cursors.html</a> (2) Open in sublime (3) Follow the instructions in the comments.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Mac</th>
+                    <th>Win</th>
+                    <th>Function</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><kbd>Cmd + optn + drag down</kbd></td>
+                    <td><kbd>Ctrl + shift + right click + drag down</kbd></td>
+                    <td>Place a cursor at that column in each row</td>
+                  </tr>
+                  <tr>
+                    <td><kbd>Cmd + click</kbd> (or alt + click)</td>
+                    <td><kbd>Ctrl + click</kbd></td>
+                    <td>Place multiple cursors throughout file</td>
+                  </tr>
+                  <tr>
+                    <td>Select a block of lines, <kbd>Cmd + shift + l</kbd></td>
+                    <td>Select a block of lines, <kbd>Ctrl + shift + l</kbd></td>
+                    <td>Select a block of lines and add a cursor to the end of each</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row cursors -->
+
+    <!-- row user pref -->
+    <div class="row">
+      <div class="col-md-12">
+        <div id="preferences" class="section">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="text-center">User Preferences</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <ol>
+                <li>Go to <kbd>Sublime Text > preferences > settings > preferences.sublime-settings -- User</kbd></li><br>
+                <li>Paste/add In: <pre><code>
+                  {
+                    "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+                    "font_size": 19.0,
+                    "hot_exit": false,
+                    "ignored_packages":
+                    [
+                      "Vintage"
+                    ],
+                    "line_padding_bottom": 2,
+                    "remember_open_files": false,
+                    "save_on_focus_lost": true,
+                    "scroll_past_end": true,
+                    "tab_size": 2,
+                    "translate_tabs_to_spaces": true,
+                    "trim_trailing_whitespace_on_save": true,
+                    "word_wrap": true
+                  }
+                </code></pre></li><br>
+                <ul>
+                  <li><code>hot_exit</code>: if <code>
+                  true</code>, sublime will close unsaved windows without prompting (and the default is true! eek!)</li>
+                  <li><code>line_padding_bottom</code>: a little extra spacing below each line (default is 0px)</li>
+                  <li><code>scroll_past_end</code>: if <code>true</code>, sublime leaves empty space between last line and bottom of the file (mac default: false, windows/linux: true)</li>
+                  <li><code>save_on_focus_lost</code>: automatically saves file every time you click out of its window (this is the <strong>best</strong>)</li>
+                  <li><code>word_wrap</code>: if <code>true</code>, sublime disables horizontal scrolling (not disabled by default)</li>
+                </ul><br>
+                <li><p>For more: <a target="_blank" href="http://docs.sublimetext.info/en/latest/reference/settings.html">Sublime settings documentation</a></p></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row user pref -->
+
+    <!-- row snippets -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section" id="snippets">
+          <h3 class="text-center">Snippets</h3>
+          <p class="text-center">(1) Download <a href="snippets.html" download="snippets.html">snippets.html</a> (2) Open in sublime (3) Follow the instructions in the comments.</p><br>
+          <p>Save and reuse bits of code</p>
+          <ol>
+            <li>In Sublime: <kbd>Tools > Developer > New Snippet</kbd></li>
+            <li>Put your snippet content inside the <code>CDATA</code> brackets: 
+            <pre><code><\![CDATA[Hello, this is some snippet text.]]></code></pre></li>
+            <li>Uncomment the <code>tabTrigger</code> line and set a word ("trigger") you will type in sublime to access the snippet</li>
+            <li>Scope is optional and specifies a certain filetype that the snippet should be available/limited to</li>
+            <li>Save the file as <code>.sublime-snippet</code> (e.g. test.sublime-snippet) in the default location</li>
+            <li>Now when you start to type the trigger word in sublime, it will suggest/complete your snippet</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <!-- /.row snippets -->
+
+    <!-- row packages -->
+    <div class="row">
+      <div class="col-md-12">
+        <div id="packages" class="section carousel slide" data-ride="carousel">
           <!-- carousel indicators -->
           <ol class="carousel-indicators">
-            <li data-target="#tools" data-slide-to="0" class="active"></li>
-            <li data-target="#tools" data-slide-to="1" class="active"></li>
-            <li data-target="#tools" data-slide-to="2"></li>
-            <!-- <li data-target="#tools" data-slide-to="2"></li>
-            <li data-target="#tools" data-slide-to="3"></li> -->
+            <li data-target="#packages" data-slide-to="0" class="active"></li>
+            <li data-target="#packages" data-slide-to="1" class="active"></li>
+            <li data-target="#packages" data-slide-to="2"></li>
           </ol>
-          <h3 class="text-center">Tools</h3>
+          <h3 class="text-center">Packages</h3>
 
           <!-- carousel inner slides  -->
           <div class="carousel-inner" role="listbox">
 
-            <!-- slide 0: sublime text 3 -->
-            <div class="item active container">
-              <div class="row">
-                <div class="col-md-12">
-                   <h4 class="text-center">0. Install Sublime Text</h4>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12"> 
-                  <p class="text-center">Latest is Sublime Text 3 (in beta). Sublime Text 2 is also fine! <a target="_blank" href="https://www.sublimetext.com/3">Download Here</a></p>
-                </div>
-              </div>
-            </div>
-            <!-- /.slide 0 sublime text 3-->
-
             <!-- slide 1: package control -->
-            <div class="item container">
+            <div class="item active container">
               <div class="row">
                 <div class="col-md-12">
                    <h4 class="text-center">1. Sublime Package Control</h4>
@@ -171,222 +381,7 @@
       </div>
       <!-- /.col -->
     </div>
-    <!-- /.row tools -->
-
-
-    <!-- row multiple cursors -->
-    <div class="row">
-      <div class="col-md-12">
-        <div id="cursors" class="section">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="text-center">Multiple Cursors</h3>
-              <p class="text-center">(1) Download <a href="cursors.html" download="cursors.html">cursors.html</a> (2) Open in sublime (3) Follow the instructions in the comments.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>Mac</th>
-                    <th>Win</th>
-                    <th>Function</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><kbd>Cmd + optn + drag down</kbd></td>
-                    <td><kbd>Ctrl + shift + right click + drag down</kbd></td>
-                    <td>Place a cursor at that column in each row</td>
-                  </tr>
-                  <tr>
-                    <td><kbd>Cmd + click</kbd> (or alt + click)</td>
-                    <td><kbd>Ctrl + click</kbd></td>
-                    <td>Place multiple cursors throughout file</td>
-                  </tr>
-                  <tr>
-                    <td>Select a block of lines, <kbd>Cmd + shift + l</kbd></td>
-                    <td>Select a block of lines, <kbd>Ctrl + shift + l</kbd></td>
-                    <td>Select a block of lines and add a cursor to the end of each</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.row cursors -->
-
-    <!-- row keyboard -->
-    <div class="row">
-      <div class="col-md-12">
-        <div id="keyboard" class="section">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="text-center">Keyboard Shortcuts</h3>
-              <p class="text-center">(1) Download <a href="shortcuts.html" download="shortcuts.html">shortcuts.html</a> (2) Open in sublime (3) Follow the instructions in the comments.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th>Mac Shortcut</th>
-                    <th>Win Shortcut</th>
-                    <th>Function</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><kbd>Cmd + [</kbd> or <kbd>Cmd + ]</kbd></td>
-                    <td><kbd>Ctrl + [</kbd> or <kbd>Ctrl + ]</kbd></td>
-                    <td>Indent or unindent selection</td>
-                  </tr>
-                  <tr>
-                    <td><kbd>Cmd + /</kbd></td>
-                    <td><kbd>Ctrl + /</kbd></td>
-                    <td>Comment/uncomment selection</td>
-                  </tr>
-                  <tr>
-                    <td><kbd>Ctrl + shift + k</kbd></td>
-                    <td><kbd>Ctrl + shift + k</kbd></td>
-                    <td>Delete line</td>
-                  </tr>
-                  <tr>
-                    <td><kbd>Cmd + shift + d</kbd></td>
-                    <td><kbd>Ctrl + shift + d</kbd></td>
-                    <td>Duplicate line(s)</td>
-                  </tr>
-                  <tr>
-                    <td><kbd>Cmd + l</kbd></td>
-                    <td><kbd>Ctrl + l</kbd></td>
-                    <td>Select line (and keep going to select subsequent)</td>
-                  </tr>
-                  <tr>
-                    <td><kbd>Cmd + j</kbd></td>
-                    <td><kbd>Ctrl + j</kbd></td>
-                    <td>Join line below to end of current line</td>
-                  </tr>
-                  <tr>
-                    <td><kbd>Cmd + ctrl + g</kbd></td>
-                    <td><kbd>Alt + f3</kbd></td>
-                    <td>Put a cursor at each instance of the selection in the file</td>
-                  </tr>
-                  <tr>
-                    <td><kbd>Cmd + d</kbd></td>
-                    <td><kbd>Ctrl + d</kbd></td>
-                    <td>Include the next instance instance of the current selection (and keep going to select subsequent)</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.row keyboard -->
-
-    <!-- row user pref -->
-    <div class="row">
-      <div class="col-md-12">
-        <div id="preferences" class="section">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="text-center">User Preferences</h3>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <ol>
-                <li>Go to <kbd>Sublime Text > preferences > settings > preferences.sublime-settings -- User</kbd></li><br>
-                <li>Paste/add In: <code>
-                  {
-                    "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
-                    "font_size": 19.0,
-                    "hot_exit": false,
-                    "ignored_packages":
-                    [
-                      "Vintage"
-                    ],
-                    "line_padding_bottom": 2,
-                    "remember_open_files": false,
-                    "save_on_focus_lost": true,
-                    "scroll_past_end": true,
-                    "tab_size": 2,
-                    "translate_tabs_to_spaces": true,
-                    "trim_trailing_whitespace_on_save": true,
-                    "word_wrap": true
-                  }
-                </code></li><br>
-                <ul>
-                  <li><code>hot_exit</code>: if <code>
-                  true</code>, sublime will close unsaved windows without prompting (and the default is true! eek!)</li>
-                  <li><code>line_padding_bottom</code>: a little extra spacing below each line (default is 0px)</li>
-                  <li><code>scroll_past_end</code>: if <code>true</code>, sublime leaves empty space between last line and bottom of the file (mac default: false, windows/linux: true)</li>
-                  <li><code>save_on_focus_lost</code>: automatically saves file every time you click out of its window (this is the <strong>best</strong>)</li>
-                  <li><code>word_wrap</code>: if <code>true</code>, sublime disables horizontal scrolling (not disabled by default)</li>
-                </ul><br>
-                <li><p>For more: <a target="_blank" href="http://docs.sublimetext.info/en/latest/reference/settings.html">Sublime settings documentation</a></p></li>
-              </ol>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.row user pref -->
-
-    <div class="row">
-      <div class="col-md-12">
-        <div class="section" id="snippets">
-          <h3 class="text-center">Snippets</h3>
-          <ul>
-            <li>In Sublime: <kbd>Tools > Developer > New Snippet</kbd></li>
-            <li>put your snippet content into the <code>CDATA[content here]</code></li>
-            <li></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!-- row misc. tips -->
-    <div class="row">
-      <div class="col-md-12">
-        <div class="section" id="tips">
-            <div class="row">
-              <div class="col-md-12">
-                 <h3 class="text-center">Misc. Tips</h3>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <h5>Open an entire directory in sublime, not just files!</h5>
-                <ul>
-                  <li>3 methods:</li>
-                  <ol>
-                    <li>In Sublime: <kbd>File > open > select your directory</kbd></li>
-                    <li>(mac) drag a directory onto the sublime app icon</li>
-                    <li>Set up the 'subl' shortcut in terminal</li>
-                      <ul>
-                        <li>(mac)<code>ln -s "/Applications/Sublime Text 3.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl</code></li>
-                        <li>now you can <code>cd</code>into a directory and enter <code>subl .</code>to open it in sublime</li>
-                      </ul>
-                  </ol>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <h5>View windows side-by-side</h5>
-                <ul>
-                  <li>In Sublime: <kbd>View > Layout > Columns: 2</kbd></li>
-                </ul>
-              </div>
-            </div>
-        </div>
-      </div>
-    </div>
-    <!-- /.row misc tips -->
+    <!-- /.row packages -->
 
   </div>
   <!-- /.main content container -->
