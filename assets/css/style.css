@@ -100,6 +100,9 @@ a:hover{
 #preferences{
   background: #fff;
 }
+#snippets{
+  background: #2A2A2A;
+}
 .table {
   margin-top: 50px;
 }

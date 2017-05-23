@@ -25,6 +25,8 @@
           <li><a href="#cursors">Cursors</a></li>
           <li><a href="#keyboard">Shortcuts</a></li>
           <li><a href="#preferences">Preferences</a></li>
+          <li><a href="#snippets">Snippets</a></li>
+          <li><a href="#tips">Tips</a></li>
         </ul>
       </div>
     </div>
@@ -338,6 +340,20 @@
 
     <div class="row">
       <div class="col-md-12">
+        <div class="section" id="snippets">
+          <h3 class="text-center">Snippets</h3>
+          <ul>
+            <li>In Sublime: <kbd>Tools > Developer > New Snippet</kbd></li>
+            <li>put your snippet content into the <code>CDATA[content here]</code></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- row misc. tips -->
+    <div class="row">
+      <div class="col-md-12">
         <div class="section" id="tips">
             <div class="row">
               <div class="col-md-12">
@@ -346,19 +362,31 @@
             </div>
             <div class="row">
               <div class="col-md-6">
+                <h5>Open an entire directory in sublime, not just files!</h5>
                 <ul>
-                  <li>Open an entire directory in sublime, not just files! 3 methods:</li>
+                  <li>3 methods:</li>
                   <ol>
-                    <li><kbd>File > open > select your directory</kbd></li>
+                    <li>In Sublime: <kbd>File > open > select your directory</kbd></li>
                     <li>(mac) drag a directory onto the sublime app icon</li>
-                    <li></li>
+                    <li>Set up the 'subl' shortcut in terminal</li>
+                      <ul>
+                        <li>(mac)<code>ln -s "/Applications/Sublime Text 3.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl</code></li>
+                        <li>now you can <code>cd</code>into a directory and enter <code>subl .</code>to open it in sublime</li>
+                      </ul>
                   </ol>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <h5>View windows side-by-side</h5>
+                <ul>
+                  <li>In Sublime: <kbd>View > Layout > Columns: 2</kbd></li>
                 </ul>
               </div>
             </div>
         </div>
       </div>
     </div>
+    <!-- /.row misc tips -->
 
   </div>
   <!-- /.main content container -->
