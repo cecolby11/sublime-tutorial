@@ -36,7 +36,7 @@ $(document).ready(function() {
 
   $('.down-arrow').on('click', function() {
     $('body').animate({
-      scrollTop: $('#tools').offset().top - 170}, 2*1000
+      scrollTop: $('#setup').offset().top - 170}, 2*1000
     );
   });
 
