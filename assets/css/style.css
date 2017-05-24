@@ -110,7 +110,7 @@ a:hover{
   color: #363636;
 }
 #cursors, 
-#color-highlighter {
+#terminal {
   background: #000;
   color: var(--eggshell);
 }
@@ -122,10 +122,10 @@ a:hover{
   color: var(--eggshell);
   background: var(--sublime-grey);
 }
-#preferences{
+#preferences, #latex{
   background: #fff;
 }
-#packages hr{
+#emmet hr {
   border-color: var(--accent2);
 }
 

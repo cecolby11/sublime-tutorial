@@ -23,7 +23,8 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#package-ctrl">Package Control</a></li>
           <li><a href="#emmet">Emmet</a></li>
-          <li><a href="#color-highlighter">Color Highlighter</a></li>
+          <li><a href="#terminal">Terminal</a></li>
+          <li><a href="#other-pkg">More</a></li>
           <li><a href="index.html">Tutorial Home (Part I)</a></li>
         </ul>
       </div>
@@ -62,7 +63,7 @@
               <div class="col-md-12">
                 <h5>To Install:</h5>
                 <ol>
-                  <li>Open Sublime Text. Open the console by pressing command + `</li>
+                  <li>Open Sublime Text. Open the console by pressing cmd/ctrl + `</li>
                   <li>Go to <a target="_blank" href="https://packagecontrol.io/installation">packagecontrol.io/installation</a></li>
                   <li>Copy the code from the Sublime Text 3 box, and paste it into the console. Hit return to run the code.</li>
                   <li>Close and reopen Sublime Text Editor.</li>
@@ -84,14 +85,15 @@
               <div class="col-md-12">
                 <h5>To Install:</h5>
                 <ol>
-                  <li><kbd>command + shift + p</kbd> to open the options menu.</li>
-                  <li>Type <kbd>Package Control Install<kbd>, and select <kbd>Package Control: Install Package</kbd></li>
+                  <li><kbd>cmd/ctrl + shift + p</kbd> to open the options console.</li>
+                  <li>Type <kbd>Package Control Install</kbd>, and select <kbd>Package Control: Install Package</kbd></li>
                   <li>In the Package Control menu, search <kbd>Emmet</kbd>. Click on the highlighted result to install.</li>
                   <li>Relaunch Sublime.</li>
                 </ol>
               </div>
               <div class="col-md-12">
-                <h5>Try It</h5>
+                <h5>Try It:</h5>
+                <p>(1) Download <a href="emmet.html" download="emmet.html">emmet.html</a> (2) Open in sublime (3) Follow the instructions in the comments.</p><br>
                 <p>Type in an emmet shortcut followed by <kbd>tab</kbd> to insert code</p>
                 <ol>
                   <li class="col-md-6"><p><code>!</code> in a .html file to insert boilerplate html</p>
@@ -99,7 +101,7 @@
                   <li class="col-md-6">
                     <p>easily create and nest HTML element tags:</p>  
                     <p><code>></code> for child relation, <code>+</code> for sibling relation, and <code>()</code> to group</p>
-                    <p>e.g. <code>table>(thead>tr)+(tbody>tr+tr+tr)</code> yields all of the html tags to create a table with a header with 1 row and a body with three rows
+                    <p>e.g. <code>table>(thead>tr)+(tbody>tr)</code> yields all of the html tags to create a table with a header and body with 1 row each
                     </p>
                   </li>
                 </ol>
@@ -107,31 +109,66 @@
             </div>
           </div>
           <!-- /.package 2 Emmet -->
-          <!-- package 3: Color Highlighter -->
-          <div class="section" id="color-highlighter">
+          <!-- package 3 terminal  -->
+          <div class="section" id="terminal">
             <div class="row">
               <div class="col-md-12">
-                <h4>Color Highlighter</h4>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <p>This Sublime plugin highlights colors in Sublime Text</p>
-                <p>In the ChiLDlab we can use Emmet to code JsPsych experiments faster!</p><hr>
+                <h4>Terminal</h4>
+                <p>Sets a shortcut to open a new terminal window at the current file</p>
+                <hr>
               </div>
               <div class="col-md-12">
+                <h5>To Install:</h5>
                 <ol>
-                  <li>Close and reopen Sublime Text Editor.</li>
-                  <li>Hit command + shift + p to open the options menu. Then type Package Control Install, and click the Package Control: Install Package option highlighted.</li>
-                  <li>In the Package Control menu, type Emmet. Click on the highlighted option to install the plugin.</li>
-                  <li>Close and reopen Sublime.</li>
-                  <li>To make sure it's installed, hit command + shift + p to open the options menu again.</li>
-                  <li>If you type Emmet and you see a slew of Emmet options, then congrats!</li>
+                  <li>Install 'Terminal' using Package Control: Install Package</li>
                 </ol>
+              </div>
+              <div class="col-md-12">
+                <h5>Try It:</h5>
+                <p>While open/active in a file in Sublime: </p>
+                <ul>
+                  <li>Mac: <kbd>Cmd + shift + t</kbd></li>
+                  <li>Win: <kbd>Ctrl + shift + t</kbd></li>
+                </ul>
               </div>
             </div>
           </div>
-          <!-- /.package 3 Color Highlighter -->
+          <!-- /.package 3 terminal -->
+          <!-- other packages -->
+          <div class="section" id="other-pkg">
+            <div class="row">
+              <div class="col-md-12">
+                <h4>Other Great Packages:</h4>
+              </div>
+              <div class="col-md-12">
+                <h5>Color Highlighter</h5>
+                <p>Highlights colors in Sublime Text</p>
+                <p>Adjust colors with the color-picker; automatically inserts the new hex (or other scheme) color code</p>
+                <ul>
+                  <li>Install Color Highlighter using Sublime Package Control</li>
+                  <li>Play around with different defaults and highlighting/underlining styles!</li>
+                </ul>
+                <img src="assets/img/color-highlight/color2.png" width="300px">
+              </div>
+              <div class="col-md-12">
+                <h5>LaTeX Tools</h5>
+                <p>Build PDFs with LaTeX, XeLaTeX, BibTeX, etc. in Sublime</p>
+                <ul>
+                  <li><a target="_blank" href="http://evgenii.com/blog/creating-pdf-from-latex-in-sublime-text-3/">Mac setup/use</a> (surprisingly easy!)</li>
+                  <li><a target="_blank" href="http://economistry.com/2012/10/first-pdf-sublime-text-2-latex/">Windows setup/use</a></li>
+                </ul>
+              </div>
+              <div class="col-md-12">
+                <h5>Bracket Highlighter</h5>
+                <p>Finally find the matching bracket (square, curly, parentheses, html tags, and more!) hiding in your document!</p>
+                <ul>
+                  <li>Install using Sublime Package Control</li>
+                  <li><a href="https://packagecontrol.io/packages/BracketHighlighter">Documentation</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.other packages -->
       </div>
       <!-- /.col -->
     </div>
